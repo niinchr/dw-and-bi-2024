@@ -56,7 +56,6 @@ def _create_tables():
         conn.commit()
 
 
-
 def _process(**context):
     hook = PostgresHook(postgres_conn_id="connect_id")
     conn = hook.get_conn()
